@@ -10,3 +10,12 @@ let endingPages = [4, 9, 13, 17, 19, 20];
 let currentPage = 0;
 
 // Your Code Here.
+while (currentPage !== null){
+    function endingPage(currentPage){
+        for (let i = 0; i < endingPages;i++){
+            let endPage = endingPages[i]
+            return currentPage === endPage
+        }
+    }
+    console.log(endingPage(currentPage) === false)
+}
