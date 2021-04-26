@@ -8,14 +8,29 @@ console.log(pages[0]);
 
 let endingPages = [4, 9, 13, 17, 19, 20];
 let currentPage = 0;
+let printedText = ``
 
-// Your Code Here.
 while (currentPage !== null){
-    function endingPage(currentPage){
-        for (let i = 0; i < endingPages;i++){
+    function endingPage(pageInput){
+        for (let i = 0; i < endingPages.length; i++){
             let endPage = endingPages[i]
-            return currentPage === endPage
+            console.log(endPage)
+            if (pageInput === endPage){
+                return true
+            }
         }
     }
-    console.log(endingPage(currentPage) === false)
+    console.log(endingPage(currentPage) === true )
+    if (endingPage(currentPage) !== true) {
+        let pagePrompt = prompt(`${pages[currentPage]} \n Please select your next page.`)
+        printedText +=`<br> ${pages[currentPage]} </br>`
+        currentPage = Number(pagePrompt)
+        printedText += `<br>You turned to page ${currentPage}</br>`
+        }
+    if (endingPage(currentPage) === true){
+        printedText += `<br> ${pages[currentPage]} </br>`
+        document.write(`<p> ${printedText} <br>\n THE END </p>`)
+        currentPage = null
+        console.log(currentPage)
+    } 
 }
