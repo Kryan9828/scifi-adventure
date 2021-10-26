@@ -1,5 +1,7 @@
-# Kenzie Academy JavaScript Assignment
+Choose Your Own Scifi Adventure
 
-Complete your work inside of `code.js`
+This is a choose your own adventure program.
 
-Follow the instructions provided on my.kenzie.academy for this assignment.
+Read through the the prompts and pick the next step in your adventure. Beware some lead to untimely ends.
+
+When you have completed your adventure the story will print to the page.
